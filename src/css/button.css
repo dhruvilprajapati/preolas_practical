@@ -11,11 +11,39 @@
     letter-spacing: 0.05em;
     display: flex;
     align-items: center;
-    overflow: hidden;
     position: relative;
     height: 2.8em;
     padding-right: 3.3em;
     cursor: pointer;
+    z-index: 1;
+    position: relative;
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.button-primary:hover {
+    color: var(--spaceCadet-100);
+}
+
+.button-primary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: var(--spaceCadet-600);
+
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+.button-primary:hover::before {
+    width: 100%;
 }
 
 .button-primary .icon {
@@ -32,10 +60,6 @@
     transition: all 0.3s;
 }
 
-.button-primary:hover .icon {
-    width: calc(100% - 0.6em);
-}
-
 .button-primary .icon svg {
     width: 1.1em;
     transition: transform 0.3s;
@@ -43,9 +67,10 @@
 }
 
 .button-primary:hover .icon svg {
+    color: var(--spaceCadet-600);
     transform: translateX(0.1em);
 }
 
-.button-primary:active .icon {
-    transform: scale(0.95);
+.button-primary:hover .icon {
+    background-color: var(--spaceCadet-100);
 }
