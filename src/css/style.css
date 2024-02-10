@@ -125,6 +125,7 @@ header {
     flex-direction: column;
     gap: 12rem;
     padding: 2rem;
+    padding-bottom: 3rem;
 }
 
 .hero1 {
@@ -244,6 +245,7 @@ header {
     text-align: center;
     color: var(--greenPigment-600);
     font-weight: 500;
+    font-size: 0.75rem;
     text-transform: uppercase;
 }
 
@@ -251,6 +253,40 @@ header {
     font-weight: 500;
     color: var(--spaceCadet-600);
     font-size: 2rem;
+    margin-top: 0.75rem;
+}
+
+.services__cards {
+    display: flex;
+    gap: 2rem;
+}
+
+.services__card1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/browsing-laptop.png);
+}
+
+.services__card2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/call-support.png);
+}
+
+.services__card3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/online-consultation.png);
+}
+
+.services__main button {
+    padding: 0.8rem 1.2rem;
+    border: 1px solid var(--spaceCadet-600);
+    border-radius: 3rem;
+    margin-top: 0.65rem;
 }
 
 /*--------------------------------- services section end-------------------------------------------------*/
