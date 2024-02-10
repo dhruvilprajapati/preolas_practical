@@ -2,8 +2,10 @@
     --spaceCadet-600: #192552;
     --spaceCadet-100: #F4F4F7;
     --spaceCadet-900: #0A0F21;
+    --spaceCadet-800: #0F1631;
     --spaceCadet-200: #D1D3DC;
     --avocadoPeel-100: #EBEBEB;
+    --greenPigment-600: #00A651;
 }
 
 * {
@@ -106,7 +108,6 @@ header {
 /*----------------------------------------- Header End -----------------------------------------*/
 
 .first {
-    min-height: 100vh;
     background-image: url('../img/background.jpg');
     background-size: cover;
 }
@@ -123,7 +124,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 12rem;
-
+    padding: 2rem;
 }
 
 .hero1 {
@@ -173,17 +174,84 @@ header {
 /*--------------------------------- portfolio section start-------------------------------------------------*/
 .portfolio {
     background: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.text-muted {
+    color: var(--spaceCadet-200);
+
+}
+
+.portfolio__title h3 {
+    color: var(--spaceCadet-600);
+    font-size: 2rem;
+    width: 80%;
 }
 
 .portfolio__main {
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.dash-front {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: var(--greenPigment-600);
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.dash-front::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 1px;
+    margin-right: 10px;
+    background-color: var(--greenPigment-600);
+}
+
+.portfolio__desc p {
+    font-weight: 400;
+    color: var(--spaceCadet-800);
+    width: 81%;
+}
+
+.portfolio__desc button {
+    padding: 0.8rem 1.2rem;
+    border: 1px solid var(--spaceCadet-600);
+    border-radius: 3rem;
+    margin-top: 0.65rem;
 }
 
 /*--------------------------------- portfolio section end-------------------------------------------------*/
 
 /*--------------------------------- services section start-------------------------------------------------*/
+.servicecs {
+    padding: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--avocadoPeel-100);
+}
 
+.services__main p {
+    text-align: center;
+    color: var(--greenPigment-600);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.services__title {
+    font-weight: 500;
+    color: var(--spaceCadet-600);
+    font-size: 2rem;
+}
 
 /*--------------------------------- services section end-------------------------------------------------*/
 /*------------------------------------Testimonial start--------------------------------------*/
