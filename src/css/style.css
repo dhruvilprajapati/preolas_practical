@@ -19,9 +19,18 @@ body {
 }
 
 /*----------------------------------------- Header Start -----------------------------------------*/
-
 header {
-    padding: 2rem 5rem;
+    width: 100%;
+    top: 0;
+    padding: 1rem;
+    z-index: 9999;
+}
+
+header.sticky {
+    position: fixed;
+    backdrop-filter: blur(2px);
+    top: 0;
+    background-color: rgba(10, 15, 33, 0.5);
 }
 
 .header-wrapper {
@@ -241,6 +250,13 @@ header {
     background: var(--avocadoPeel-100);
 }
 
+.services__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .services__main p {
     text-align: center;
     color: var(--greenPigment-600);
@@ -258,28 +274,77 @@ header {
 
 .services__cards {
     display: flex;
+    flex: 1;
     gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-.services__card1 {
+.services__cards .card {
+    overflow: hidden;
+    border-radius: 2rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(../img/browsing-laptop.png);
+    align-items: flex-end;
+    justify-content: stretch;
+    position: relative;
+    width: 320px;
+    height: 350px;
+    cursor: pointer;
+    transition: transform 300ms;
 }
 
-.services__card2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(../img/call-support.png);
+.services__cards .card:hover {
+    transform: translateY(-1rem);
 }
 
-.services__card3 {
+
+.services__cards .card div {
     display: flex;
-    justify-content: center;
     align-items: center;
-    background: url(../img/online-consultation.png);
+    padding: 1rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.services__cards .card button {
+    margin: 0;
+    border: none;
+    width: 1.5rem;
+    padding: 0;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--avocadoPeel-100);
+    background-color: rgb(244, 244, 247, 0.25);
+    transition: background-color 300ms, color 300ms;
+}
+
+
+.services__cards .card:hover button {
+    background-color: var(--avocadoPeel-100);
+    color: var(--spaceCadet-900);
+}
+
+.services__cards .card p {
+    color: var(--spaceCadet-100);
+    z-index: 1;
+}
+
+.services__cards .card-1 {
+    background-image: url("../img/online-consultation.png");
+}
+
+.services__cards .card-2 {
+    background-image: url("../img/call-support.png");
+}
+
+.services__cards .card-3 {
+    background-image: url("../img/browsing-laptop.png");
 }
 
 .services__main button {
