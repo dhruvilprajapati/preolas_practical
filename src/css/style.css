@@ -1,0 +1,188 @@
+:root {
+    --spaceCadet-600: #192552;
+    --spaceCadet-100: #F4F4F7;
+    --spaceCadet-900: #0A0F21;
+    --spaceCadet-200: #D1D3DC;
+    --avocadoPeel-100: #EBEBEB;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif !important;
+}
+
+/*----------------------------------------- Header Start -----------------------------------------*/
+
+header {
+    padding: 2rem 5rem;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-wrapper .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-wrapper .logo .logo-img {
+    align-self: flex-end;
+}
+
+.header-wrapper .logo .logo-name {
+    font-size: 1.5rem;
+}
+
+.header-wrapper nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-list {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header-wrapper nav .nav-list ul {
+    list-style: none;
+    display: flex;
+    gap: 1.7rem;
+    align-items: center;
+}
+
+.header-wrapper nav .nav-list ul li a {
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: var(--spaceCadet-100);
+    padding: 0.4rem 0.8rem;
+    border-radius: 5rem;
+    transition: background-color 300ms;
+}
+
+.header-wrapper nav .nav-list ul li a:hover {
+    background-color: #bbbbbb88;
+}
+
+.header-wrapper nav .nav-buttons button {
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    margin: 0 0.5rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 2.25rem;
+    border: none;
+    cursor: pointer;
+}
+
+.header-wrapper nav .nav-buttons .nav-button-startfree {
+    background-color: white;
+    color: var(--spceCadet-600);
+}
+
+
+.mobile-nav-toggler {
+    display: none;
+}
+
+.mobile-nav-toggler div {
+    width: 1.75rem;
+    height: 3px;
+    background-color: hsl(0, 0%, 11%);
+    margin: 5px;
+    transition: transform 500ms, opacity 500ms;
+}
+
+/*----------------------------------------- Header End -----------------------------------------*/
+
+.first {
+    min-height: 100vh;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+}
+
+
+/* --------------------------------hero section start ---------------------------------------------*/
+.container {
+    max-width: 1100px;
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+
+}
+
+.hero1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero1 .title {
+    font-size: 3rem;
+    color: var(--spaceCadet-100);
+}
+
+.hero2 {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero2 .title {
+    color: var(--spaceCadet-100);
+}
+
+
+.hero2 .hero2-btn {
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    margin: 0 0.5rem;
+    padding: 0.7rem 1.2rem;
+    border: 1px solid var(--spaceCadet-100);
+    border-radius: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--spaceCadet-100);
+}
+
+.hero2 .hero2-btn:hover {
+    background-color: var(--spaceCadet-600);
+}
+
+/*--------------------------------- hero section end-------------------------------------------------*/
+
+/*--------------------------------- portfolio section start-------------------------------------------------*/
+.portfolio {
+    background: white;
+}
+
+.portfolio__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*--------------------------------- portfolio section end-------------------------------------------------*/
+
+/*--------------------------------- services section start-------------------------------------------------*/
+
+
+/*--------------------------------- services section end-------------------------------------------------*/
+/*------------------------------------Testimonial start--------------------------------------*/
+
+/*--------------------------------------Testimonial End------------------------------------------*/
