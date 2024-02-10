@@ -34,3 +34,13 @@ document.addEventListener('scroll', () => {
         header.classList.remove('sticky')
     }
 })
+
+const swiper = new Swiper(".swiper", {
+    slidesPerView: 3.5,
+});
+
+const caseStudiesSwiper = new Swiper(".case-studies-swiper", {
+    slidesPerView: 1.2,
+    spaceBetween: 30,
+    //   centeredSlides: true,
+});

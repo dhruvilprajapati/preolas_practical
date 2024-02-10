@@ -10,7 +10,7 @@
 
     .mobile-nav-toggler[area-expanded="true"] {
         position: fixed;
-        right: 3rem;
+        right: 5rem;
     }
 
     .mobile-nav-toggler[area-expanded="true"] .line1 {
@@ -43,8 +43,7 @@
         top: 0;
         right: 0;
         width: 75%;
-        background: hsla(0, 0%, 100%, 0.4);
-        backdrop-filter: blur(2rem);
+        background: hsla(0, 0%, 50%, 1);
         z-index: 9999;
         padding: max(5rem, 15%) 1rem;
         transform: translate(100%);

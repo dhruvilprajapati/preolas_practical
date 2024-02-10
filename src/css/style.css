@@ -1,5 +1,6 @@
 :root {
     --spaceCadet-600: #192552;
+    --spaceCadet-500: rgba(71, 81, 117, 1);
     --spaceCadet-100: #F4F4F7;
     --spaceCadet-900: #0A0F21;
     --spaceCadet-800: #0F1631;
@@ -354,7 +355,60 @@ header.sticky {
     margin-top: 0.65rem;
 }
 
-/*--------------------------------- services section end-------------------------------------------------*/
+/*--------------------------------- services section end-------------------------------------------*/
+/*------------------------------------ About section start------------------------------------- */
+.about {
+    background-image: url("../img/strategic.png");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.about__main {
+    width: 34%;
+    background: var(--spaceCadet-100);
+    margin-left: 8rem;
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+}
+
+.about__main span {
+    font-weight: 500;
+    color: var(--greenPigment-600);
+}
+
+.about__main div {
+    margin-top: 0.25rem;
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--spaceCadet-900);
+}
+
+.about__main p {
+    font-weight: 400;
+    color: var(--spaceCadet-500);
+    padding: 0.25rem;
+}
+
+.about__main button {
+    font-weight: 400;
+    background-color: var(--spaceCadet-600);
+    color: var(--spaceCadet-100);
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: none;
+    transition: background-color 200ms;
+    margin-top: 0.5rem;
+}
+
+.about__main button:hover {
+    background-color: var(--spaceCadet-800);
+}
+
+/*------------------------------------- About section end-------------------------------------- */
 /*------------------------------------Testimonial start--------------------------------------*/
 
 /*--------------------------------------Testimonial End------------------------------------------*/

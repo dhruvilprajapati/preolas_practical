@@ -9,11 +9,17 @@
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/media-queries.css" />
     <link rel="stylesheet" href="./src/css/button.css" />
+    <link rel="stylesheet" href="./src/css/slider.css" />
+
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -135,10 +141,61 @@
                 <button>Learn more</button>
             </div>
         </section>
-        <section class="testimonial"></section>
+        <section class="testimonial">
+            <button id="testimonial-next">Next</button>
+            <button id="testimonial-prev">Prev</button>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide testimonial">
+                        <div class="card"></div>
+                    </div>
+                    <div class="swiper-slide testimonial">
+                        <div class="card"></div>
+                    </div>
+                    <div class="swiper-slide testimonial">
+                        <div class="card"></div>
+                    </div>
+                    <div class="swiper-slide testimonial">
+                        <div class="card"></div>
+                    </div>
+                    <div class="swiper-slide testimonial">
+                        <div class="card"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="case-studies">
+            <button id="case-studies-next">Next</button>
+            <button id="case-studies-prev">Prev</button>
+            <div class="case-studies-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide case-study">
+                        <div class="card"></div>
+                    </div>
+                    <div class="swiper-slide case-study">
+                        <div class="card"></div>
+                    </div>
+                    <div class="swiper-slide case-study">
+                        <div class="card"></div>
+                    </div>
+                    <div class="swiper-slide case-study">
+                        <div class="card"></div>
+                    </div>
+                    <div class="swiper-slide case-study">
+                        <div class="card"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
     <script src="./src/js/main.js"></script>
+    <script src="./src/js/testimonialSlider.js"></script>
+    <script src="./src/js/caseStudiesSlider.js"></script>
 </body>
 
 </html>
