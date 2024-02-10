@@ -135,6 +135,7 @@ header {
 .hero1 .title {
     font-size: 3rem;
     color: var(--spaceCadet-100);
+    width: 60%;
 }
 
 .hero2 {
@@ -146,6 +147,8 @@ header {
 
 .hero2 .title {
     color: var(--spaceCadet-100);
+    width: 30%;
+    font-size: 1rem;
 }
 
 
