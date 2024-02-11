@@ -1,11 +1,17 @@
 :root {
+    --spaceCadet-1000: #050710;
     --spaceCadet-600: #192552;
     --spaceCadet-500: rgba(71, 81, 117, 1);
     --spaceCadet-100: #F4F4F7;
     --spaceCadet-900: #0A0F21;
     --spaceCadet-800: #0F1631;
     --spaceCadet-200: #D1D3DC;
+    --spaceCadet-300: #A3A8BA;
     --avocadoPeel-100: #EBEBEB;
+    --avocadoPeel-200: #D7D7D8;
+    --avocadoPeel-500: #615F62;
+    --avocadoPeel-800: #222123;
+    --avocadoPeel-1000: #0B0B0C;
     --greenPigment-600: #00A651;
 }
 
@@ -367,7 +373,7 @@ header.sticky {
 }
 
 .about__main {
-    width: 34%;
+    width: 29rem;
     background: var(--spaceCadet-100);
     margin-left: 8rem;
     padding: 2rem 3rem;
@@ -409,6 +415,44 @@ header.sticky {
 }
 
 /*------------------------------------- About section end-------------------------------------- */
+
 /*------------------------------------Testimonial start--------------------------------------*/
+.testimonial {
+    background: var(--spaceCadet-1000);
+}
+
+.testimonial .testimonial__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.testimonial .testimonial__title h3 {
+    font-weight: 500;
+    color: var(--spaceCadet-100);
+}
+
+.testimonial__title .testinomial__buttons button {
+    border: 0;
+    background: var(--spaceCadet-600);
+    border-radius: 50%;
+    padding: 1rem 1rem;
+    font-size: 0.8rem;
+    color: var(--spaceCadet-100);
+    transition: all 0.3s;
+}
+
+.testimonial__title .testinomial__buttons button:hover {
+    background: var(--spaceCadet-800);
+}
 
 /*--------------------------------------Testimonial End------------------------------------------*/
+
+/*------------------------------------CaseStudies Start------------------------------------- */
+
+/*------------------------------------CaseStudies End------------------------------------- */
