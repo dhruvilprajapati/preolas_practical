@@ -76,8 +76,29 @@
     .header-wrapper nav[data-visible='true'] {
         transform: translate(0%);
     }
+
+    /*--------------------------------  MEDIA Query------------------------------------------ */
+    .services__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about {
+        min-height: 70vh;
+    }
+
+    .testimonial .card {
+        min-height: 350px !important;
+    }
+
+    .testimonial .card__details {
+        gap: 0rem !important;
+    }
+
+
 }
 
+/*------------------------------ Max-width :400px----------------------------------------- */
 @media screen and (max-width:400px) {
 
     .mobile-nav-toggler[area-expanded="true"] {
@@ -87,8 +108,71 @@
     header {
         padding: 1rem 2rem;
     }
+
+    .hero1 .title {
+        font-size: 2rem;
+        width: 70%;
+    }
+
+    .button-primary {
+        font-size: 10px !important;
+    }
+
+    .hero2 .title {
+        width: 50%;
+        font-size: 0.75rem;
+    }
+
+    .hero2 .hero2-btn {
+        font-size: 0.75rem !important;
+    }
+
+    .portfolio__main {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio__title h3 {
+        width: 100%;
+    }
+
+    .portfolio__desc p {
+        width: 100%;
+        padding: 1rem 0rem;
+    }
+
+    .services__title {
+        font-size: 1.5rem;
+    }
+
+    .services__main button {
+        padding: 0rem 1rem;
+    }
+
+    .about {
+        padding: 2rem;
+    }
+
+    .about__main {
+        width: 20rem;
+        margin-left: 0;
+        padding: 2rem 1rem;
+    }
+
+    .about__main div {
+        font-size: 2rem;
+    }
+
+    .contents__title {
+        padding: 2rem 1rem 2rem 1rem;
+        font-size: 2rem;
+    }
+
+    .contents__cards {
+        flex-wrap: wrap;
+    }
 }
 
+/*------------------------------ Max-width :360px----------------------------------------- */
 @media screen and (max-width:360px) {
     .mobile-nav-toggler[area-expanded="true"] {
         right: 1rem;
@@ -96,5 +180,38 @@
 
     header {
         padding: 1rem 1rem;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    footer {
+        padding: 10px;
+    }
+
+    .footer-nav {
+        display: flex;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .footer-left {
+        padding: 1rem;
+        gap: 1rem;
+    }
+}
+
+/* Media query for screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    footer {
+        padding: 15px;
+    }
+}
+
+/* Media query for screens larger than 1023px */
+@media (min-width: 1024px) {
+    footer {
+        padding: 20px;
     }
 }
