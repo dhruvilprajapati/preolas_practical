@@ -34,12 +34,38 @@ document.addEventListener("scroll", () => {
     }
 });
 
-const swiper = new Swiper(".swiper", {
-    slidesPerView: 3.5,
-    centeredSlides: true,
+const swiperContainer = document.querySelector('.swiper');
+
+function calculateSlidesPerView() {
+    const screenWidth = window.innerWidth;
+    if (screenWidth >= 768) {
+        return 3.5; // Wider screens: display 3.5 cards
+    }
+    else if (screenWidth >= 400) {
+        return 2; // Medium screens: display 2 cards
+    } else {
+        return 1.5; // Smaller screens: display 1.5 cards
+    }
+}
+
+const swiper = new Swiper(swiperContainer, {
     initialSlide: 2,
+    loop: true,
+    slidesPerView: calculateSlidesPerView(),
+    centeredSlides: true,
     spaceBetween: 30,
+    breakpoints: {
+        400: {
+            slidesPerView: calculateSlidesPerView(), // Re-calculate for responsive size
+        }
+    }
 });
+
+window.addEventListener('resize', () => {
+    swiper.params.slidesPerView = calculateSlidesPerView();
+    swiper.update();
+});
+
 
 const caseStudiesSwiper = new Swiper(".case-studies-swiper", {
     slidesPerView: 1.2,

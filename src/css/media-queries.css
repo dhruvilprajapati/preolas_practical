@@ -99,7 +99,7 @@
 }
 
 /*------------------------------ Max-width :400px----------------------------------------- */
-@media screen and (max-width:400px) {
+@media screen and (max-width:768px) {
 
     .mobile-nav-toggler[area-expanded="true"] {
         right: 2rem;
@@ -169,6 +169,14 @@
 
     .contents__cards {
         flex-wrap: wrap;
+    }
+
+    .testimonial .testimonial__title h3 {
+        font-size: 2rem;
+    }
+
+    .testimonial .testimonial__title {
+        padding: 2rem 2rem;
     }
 }
 
